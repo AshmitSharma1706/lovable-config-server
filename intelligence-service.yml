@@ -9,7 +9,7 @@ spring:
     password: admin
     driver-class=name: org.postgresql.Driver
 
-    ai:
+  ai:
       model.chat: openai
       openai:
         api-key: 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
@@ -20,4 +20,4 @@ spring:
             temperature: 0.0
         embedding:
           options:
-            model: qwen/qwen3-embedding-8b
+            model: qwen/qwen3-embedding-8b    
