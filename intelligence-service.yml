@@ -7,17 +7,20 @@ spring:
     url: jdbc:postgresql://localhost:5432/lovable_intelligence_service
     username: postgres
     password: admin
-    driver-class=name: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
 
   ai:
     model.chat: openai
+    
     openai:
       api-key: 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
-      base-url: https://openrouter.ai/api
+      base-url: https://openrouter.ai/api/v1
+      
       chat:
         options:
           model: google/gemini-3-flash-preview
           temperature: 0.0
+          
       embedding:
         options:
           model: qwen/qwen3-embedding-8b
