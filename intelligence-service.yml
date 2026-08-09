@@ -18,9 +18,9 @@ spring:
       
       chat:
         options:
-          model: openai/gpt-oss-20b:free
+          model: poolside/laguna-s-2.1:free
           temperature: 0.0
           
       embedding:
         options:
-          model:
+          model: nvidia/nemotron-3-embed-1b:free
