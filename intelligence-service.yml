@@ -18,7 +18,7 @@ spring:
       
       chat:
         options:
-          model: cohere/north-mini-code:free
+          model: nvidia/nemotron-3-embed-1b:free
           temperature: 0.0
           
       embedding:
