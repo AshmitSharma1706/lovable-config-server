@@ -18,7 +18,7 @@ spring:
       
       chat:
         options:
-          model: nvidia/nemotron-3-embed-1b:free
+          model: nvidia/nemotron-3.5-content-safety:free
           temperature: 0.0
           
       embedding:
