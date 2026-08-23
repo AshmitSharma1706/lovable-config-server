@@ -18,4 +18,25 @@ minio:
   url: http://localhost:9000          # or minio:9000 if inside docker network
   access-key: minioadmin
   secret-key: minioadmin123
-  project-bucket: lovable-ai      
+  project-bucket: lovable-ai
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: k8s
+  datasource:
+    url: jdbc:postgresql://pgvector.lovable-core.svc.cluster.local:5432/workspace_db
+    username: workspace_user
+    password: ${DB_PASSWORD}
+  data:
+    redis:
+      host: redis.lovable-core.svc.cluster.local
+      port: 6379
+
+minio:
+  url: http://minio.lovable-core.svc.cluster.local:9000          # or minio:9000 if inside docker network
+  access-key: ${MINIO_ROOT_USER}
+  secret-key: ${MINIO_ROOT_PASSWORD}
+  project-bucket: lovable-ai
