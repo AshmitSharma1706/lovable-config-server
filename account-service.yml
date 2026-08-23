@@ -30,4 +30,4 @@ stripe:
   api:
     secret: ${STRIPE_API_KEY}
   webhook:
-    secret: ${STRIPE_WEGHOOK_KEY}
+    secret: ${STRIPE_WEBHOOK_KEY}
